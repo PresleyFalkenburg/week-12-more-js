@@ -10,11 +10,17 @@
     <script>
         function factorial(n){
             var total = 1;
-            for (i = 0; 1 < n; i ++){
-                total = total * (n - 1)
-                cosole.log("current value of total is:  " + total)
+            for (i = 0; i < n; i ++){
+                total = total * (n - i)
+                console.log("current value of total is:  " + total)
             }
+            return total;
         }
+        
+        var userstring = prompt("Number please");
+        var usernum = parseInt(userstring);
+
+        console.log(usernum + "! is " + factorial(usernum));
     </script>
     
 </body>
